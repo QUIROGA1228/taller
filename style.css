@@ -9,7 +9,7 @@ body{
     padding: 0;
 }
 nav{
-    background-color: aquamarine;
+    background-color: #00b19d;
     height: 3rem;
 }
 .container-body{
@@ -23,7 +23,7 @@ nav{
     height: 100%;
 }
 #index{
-    background-color: aqua;
+    background-color: #ffffff;
     height: 100%;
     width: 4rem;
 }
@@ -40,25 +40,106 @@ main{
     flex-wrap: wrap;
 }
 #products article{
-    background-color: bisque;
-    width: 8rem;
-    height: 10rem;
-    border: 1px solid red;
+    background-color: rgb(255, 255, 255);
+    width: 15rem;
+    height: 20rem;
+    /* border: 1px solid red; */
     margin: 1rem;
 }
+#letra{
+    color: rgb(143, 140, 140);
+    border: 2px solid #00b19d;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+      
+}
+
+#letra h4{
+    right: 10rem;
+    border: 1px solid yellow;
+    left: 0;
+    position: relative; 
+    margin: 1rem;
+}
+
+#letra h5 {
+    right: 10rem;
+    border: 1px solid yellow;
+    left: 0;
+    position: relative;
+    color: black;
+    height: 11rem;
+    
+}
+#letra h6{
+    position: relative;
+    background-color: #ffffff;
+    width: 2rem;
+    color: black;
+    left: 12rem;
+    right: 0rem;    
+    border: 1px solid red;
+    
+}
+
+#letra h3{
+    right: 0;
+    /* border: 1px solid yellow; */
+    left: 6.4rem;
+    position: absolute;
+    background-color: #ffffff;
+    width: 4rem;
+    color: #00b19d;
+    
+}
+/* #letra p{
+    right: 0;
+    border: 1px solid yellow;
+    left: 9rem;
+    position: absolute;
+    background-color: #ffffff;
+    width: 3rem;
+    color: black;
+} */
 #shop{
     background-color: antiquewhite;
     height: 100%;
     flex-grow: .4;
+    width: 30rem;
+    
 }
 footer{
-    background-color: aqua;
+   
     position: fixed;
     bottom: 0;
-    height: 3rem;
+    height: 7rem;
     width: 100%;
 }
 
+#shopping{
+    background-color: #809bb6;  
+}
 
+#sale_button{
+    background-color: #f5f5f5;
+    height: 4rem;
+    
+}
+#cancelar{
+    background-color: #809bb6;
+    height: 4rem; 
+}
+.fac{
+    display: flex;
+    flex-flow: row;
+    overflow: auto;
+}
+img{
+    object-fit: cover;
+    
+    height: 12rem;
+    margin: 1.2rem;
+}
 
 
