@@ -1,0 +1,12 @@
+@media (max-width: 300px) {
+  #section.-products {
+    margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #asode-shop {
+    position: absolute;
+  }
+}
+/*# sourceMappingURL=media.css.map */

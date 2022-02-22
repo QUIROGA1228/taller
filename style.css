@@ -46,24 +46,25 @@ main{
 }
 
 #search{
-    text-align: center;
+    position: relative;
+    top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     height: 3rem;
     width: 100%;
     /* border: 2px solid #00b19d; */
-    margin: 1rem;
+    display: flex;
+    justify-content: center !important;
 }
-.sea{
-    width: 4rem;
+#search button{
+    width: 3rem;
     height: 2rem;
-    margin: 4px;
     background-color: #00b19d;
-    border-radius: 0.5rem;
     border: none;
 }
 #search input{
     height: 2rem;
-    width: 40rem;
-    border-radius: 0.5rem;
+    width: 40%;
     border: none;
     border: 2px solid #00b19d;
 }
@@ -79,8 +80,8 @@ main{
 }
 #products article{
     background-color: rgb(255, 255, 255);
-    width: 14rem;
-    height: 20rem;
+    width: 12rem;
+    height: 18rem;
     margin: 2rem;
     border: 1px solid #00b19d;
     position: relative;
@@ -88,7 +89,7 @@ main{
 .cod{
     position: absolute;
     right: 0;
-    left: 8%;
+    left: 10%;
     /* border: 1px solid yellow; */
     background-color: #ffffff;
     color: #00b19d;
@@ -96,7 +97,7 @@ main{
     width: 2.6rem;
     height: 1.2rem;
 }
-article h4{
+article h5{
     color: rgb(143, 140, 140);
     text-align: center;
     display: flex;
@@ -107,8 +108,9 @@ article h4{
     left: 0;
     position: relative; 
     margin: 1rem;
+    top: -4%;
 }
-article h5 {
+article h6 {
     right: 10rem;
     /* border: 1px solid yellow; */
     left: 0;
@@ -116,24 +118,49 @@ article h5 {
     color: black;
     height: 1rem;
     text-align: center;
+    top: -5%;
 }
 .inv{
     position: absolute;
     right: 0;
-    left: 11rem;
+    left: 8.5rem;
     /* border: 1px solid yellow; */
     background-color: #ffffff;
     color: #00b19d;
-    top: 12.2rem;
+    top: 10.2rem;
     width: 2.6rem;
     height: 1.2rem;
+}
+.est{
+    position: absolute;
+    right: 10%;
+    left: 78%;
+    /* border: 1px solid yellow; */
+    background-color: #ffffff;
+    color: #00b19d;
+    top: 10%;
+    width: 2rem;
+    height: 1.2rem;
+}
+article button{
+    position: absolute;
+    right: 10%;
+    left: 91%;
+    /* border: 1px solid yellow; */
+    background-color: #ffffff;
+    color: #00b19d;
+    top:  -3.5%;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: 1px solid;
 }
 
 #shop{
     background-color: antiquewhite;
     height: 100%;
     flex: .4;
-    border: 1px solid red;    
+    /* border: 1px solid red; */
 }
 #shop h3{
     background-color: #809bb6;
@@ -145,12 +172,11 @@ article h5 {
 }
 #shop article{
     width: 45%;
-    /* display: flex; */
-    
+    /* display: flex; */    
     border: none;    
     outline: none;
     border: 1px solid #00b19d;
-
+    justify-content: space-between;
 }
 #shop article input{
     position: relative;
@@ -159,34 +185,45 @@ article h5 {
     outline: none;
     border-bottom: 1px solid #00b19d;
 }
+.bote{
+    text-align: center;
+    position: relative;
+    top: 1rem;
+}
+.bote button{
+    border-radius: 2rem;
+    background-color: #ffffff;
+    border: 1px solid ;
+    width: 2rem;
+    height: 2rem;
+}
 footer{
     background-color: #d8d6d6;
     position: fixed;
     bottom: 0;
     height: 7rem;
     width: 100%;
+    display: flex;
+    flex-flow: column;
 }
-
+img{
+    object-fit: cover;
+    /* border: 1px solid red; */
+    height: 10rem;
+    margin: 1.2rem;
+    width: 9.5rem;
+}
 #sale_button{
     background-color: #00b19d;
     height: 2.5rem;
     margin: 1rem;
     width: 26.5%;
     border-radius: 1rem;
-}
-#cancelar{
-    background-color: #809bb6;
-    height: 2.7rem; 
-    width: 27.5%;   
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
 }
 
-img{
-    object-fit: cover;
-    /* border: 1px solid red; */
-    height: 12rem;
-    margin: 1.2rem;
-    width: 12rem;
-}
 .but{
     height: 2rem;
     width: 4rem;
@@ -197,6 +234,19 @@ img{
     border: none;
     border-radius: 1rem;
 }
+#sale_button span{
+    right: 8rem;
+    left: 4rem;
+    margin: 0.7rem;
+}
+#cancelar{
+    background-color: #809bb6;
+    height: 2.7rem; 
+    width: 28%;
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row;
+}
 .can{
     height: 2rem;
     width: 4rem;
@@ -205,10 +255,11 @@ img{
     border: none;
     border-radius: 1rem;
     background-color: #809bb6;
-}
-.cel{
-    right: 2rem;
-    left: 2rem;
     
+}
+#cancelar span{
+    right: 8rem;
+    left: 4rem;
+    margin: 0.8rem;
 }
 
