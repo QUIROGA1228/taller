@@ -76,7 +76,8 @@ main{
     flex-flow: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    overflow: scroll;   
+    overflow: scroll;
+  
 }
 #products article{
     background-color: rgb(255, 255, 255);
@@ -157,10 +158,11 @@ article button{
 }
 
 #shop{
-    background-color: antiquewhite;
+    background-color: rgb(247, 247, 247);
     height: 100%;
-    flex: .4;
+    flex: .5;
     /* border: 1px solid red; */
+    
 }
 #shop h3{
     background-color: #809bb6;
@@ -170,25 +172,40 @@ article button{
     position: relative;
     margin: 0;
 }
-#shop article{
-    width: 45%;
-    /* display: flex; */    
-    border: none;    
-    outline: none;
-    border: 1px solid #00b19d;
+.data{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    left: 10rem;
     justify-content: space-between;
 }
-#shop article input{
-    position: relative;
+.data article{
+    width: 47%;
+    display: flex;    
+    flex-flow: row;
+    flex-wrap: wrap;
+    border: none;    
+    outline: none;
+    margin: 1%;
+    color: grey;
+}
+.data article input{
     width: 100%;
     border: none;
     outline: none;
-    border-bottom: 1px solid #00b19d;
+    border-bottom: 1px solid grey;
+    background-color: rgb(247, 247, 247);
 }
 .bote{
     text-align: center;
     position: relative;
     top: 1rem;
+}
+.bote small{
+    position: absolute;
+    left: 2%;
+    color: gray;
+    top: -1rem;
 }
 .bote button{
     border-radius: 2rem;
@@ -198,7 +215,7 @@ article button{
     height: 2rem;
 }
 footer{
-    background-color: #d8d6d6;
+    background-color: rgb(238, 234, 234);
     position: fixed;
     bottom: 0;
     height: 7rem;
@@ -217,7 +234,7 @@ img{
     background-color: #00b19d;
     height: 2.5rem;
     margin: 1rem;
-    width: 26.5%;
+    width: 30.5%;
     border-radius: 1rem;
     display: flex;
     flex-flow: row;
@@ -242,7 +259,7 @@ img{
 #cancelar{
     background-color: #809bb6;
     height: 2.7rem; 
-    width: 28%;
+    width: 32.5%;
     justify-content: space-between;
     display: flex;
     flex-flow: row;
