@@ -36,6 +36,7 @@ nav{
     margin: 1rem;
     border-radius: 2rem;
     border: none;
+    box-shadow: 2px 3px 3px grey;
 }
 main{
     background-color: rgb(238, 234, 234);
@@ -86,6 +87,7 @@ main{
     margin: 2rem;
     border: 1px solid #00b19d;
     position: relative;
+    box-shadow: 5px 5px 5px grey;
 }
 .cod{
     position: absolute;
@@ -155,6 +157,7 @@ article button{
     height: 2rem;
     border-radius: 1rem;
     border: 1px solid;
+    box-shadow: 1px 3px 3px grey;
 }
 
 #shop{
@@ -200,6 +203,7 @@ article button{
     text-align: center;
     position: relative;
     top: 1rem;
+    margin-top: 1rem;
 }
 .bote small{
     position: absolute;
@@ -207,12 +211,33 @@ article button{
     color: gray;
     top: -1rem;
 }
+.bote span h4{
+    position: absolute;
+    left: 71%;
+    color: gray;
+    top: -1rem;
+
+}
+.material-icons{
+    position: absolute;
+    left: 89%;
+    color: grey;
+}
 .bote button{
     border-radius: 2rem;
     background-color: #ffffff;
     border: 1px solid ;
     width: 2rem;
     height: 2rem;
+}
+#bo{
+    border: 2px solid #00b19d;
+    color: #00b19d;
+}
+#to{
+    border: none;
+    color: #00b19d;
+    box-shadow: 1px 3px 3px grey;
 }
 footer{
     background-color: rgb(238, 234, 234);
