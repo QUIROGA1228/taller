@@ -1,28 +1,26 @@
 @media ( max-width: 380px)
-    #section-products
-        margin: 0
-        justify-content: center
+    #index
+        display: none
+    #aside-shop
+        display: none
+
+@media (min-width: 380px) and (max-width: 500px)
+    #index
+        display: flex
+    #aside-shop
+        display: none
+
+@media (min-width: 500px) and (max-width: 700px)                
+    #aside-index
+        display: flex
     #aside-shop
         position: absolute
         z-index: 1000
+        display: flex
         width: 100%
-        right: 0
-        height: calc(100% - 3.5rem)
-        visibility: hidden
-
-    #aside-index
-        display: none
-    #section-search input
-        width: 58%
-
-
-@media (min-width: 380px) and (max-width: 430px)
-    #section-products
-        margin: 0
-        justify-content: center
+        height: calc( 100% - 3.5rem )
+    
+ @media (min-width: 700px) and (max-width: 1280px) 
     #aside-shop
-        position: absolute
-
-
-
-@media (min-width: 1366px) 
+        flex: 1
+        
